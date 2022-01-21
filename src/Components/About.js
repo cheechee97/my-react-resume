@@ -10,7 +10,7 @@ const About = ( {data} ) => {
     const profilepic = "images/"  + data.image;
     const saveFile = () => {
         saveAs(
-          "/CheeLimPengResume.pdf",
+          data.resumedownload,
           "Resume.pdf"
         );
       };
@@ -25,6 +25,15 @@ const About = ( {data} ) => {
                     <div className="col-8 text-white">
                         <h2>About Me</h2>
                         <p>{data.bio}</p>
+                        <h2>Contact Details</h2>
+                        <p className="address">
+                                <span>{data.name}</span><br />
+                                <span>{data.address.street}<br />
+                                {data.address.city} {data.address.state}, {data.address.zip}
+                                </span><br />
+                                <span>{data.phone}</span><br />
+                            <span>{data.email}</span>
+                        </p>
                         <button type="button" onClick={saveFile} className="btn btn-dark" style={{width: 200}} download><i className="fa fa-download"></i> &nbsp; Download Resume</button>
                     </div>
                 </div>

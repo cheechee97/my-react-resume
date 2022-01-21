@@ -3,26 +3,30 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
 import '../css/Footer.css';
 
-const Footer = () => {
+const Footer = ( {data} ) => {
 
     return (
-    <footer className='bg-dark text-white'>
-
-        <div className="row">
-           <div className="twelve columns">
-              <ul className="social-links">
-                <li key=""><a href=""><i className="fa fa-facebook"></i></a></li>
+      <footer className="site-footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 col-sm-6 col-xs-12">
+              <p className="copyright-text">Copyright &copy; 2020 All Rights Reserved by Chee
+              </p>
+            </div>
+  
+            <div className="col-md-4 col-sm-6 col-xs-12">
+              <ul className="social-icons">
+               {data.social.map(
+                              (social) => {
+                                 return (<li key={social.name}><a href={social.url}><i className={social.className}></i></a></li>);
+                                 
+                              }
+                           )}  
               </ul>
-   
-              <ul className="copyright">
-                 <li>&copy; Copyright 2017 Tim Baker</li>
-                 <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-              </ul>
-   
-           </div>
-           <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>
+            </div>
+          </div>
         </div>
-     </footer>
+  </footer>
     );
 }
 

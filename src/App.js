@@ -7,14 +7,14 @@ import Header from './Components/Header';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Footer from './Components/Footer';
-import Work from './Components/Work';
+import Project from './Components/Project';
 
 function App() {
-  const [portfolioData, setPortfolioData] = useState({});
+  const [resumeData, setResumeData] = useState({});
   const [loaded, setisLoaded] = useState(false);
 
   const getData = async () => {
-     return fetch('/portfolioData.json',{
+     return fetch('/resumeData.json',{
         headers : { 
           'Content-Type': 'application/json',
           'Accept': 'application/json'
@@ -29,20 +29,14 @@ function App() {
         }      
         
     }).then(function(myJson) {
-        //console.log(myJson);
-        setPortfolioData(myJson);
+        setResumeData(myJson);
         return myJson;
       });
   }
   useEffect(()=>{
-    // getData();
-    // if (portfolioData != undefined) {
-    //   setLoading(true);
-    // }
     (async () => {
       const Data = await getData();
-      console.log(Data);
-      setPortfolioData(Data);
+      setResumeData(Data);
       setisLoaded(true);
     })();
 
@@ -52,11 +46,11 @@ function App() {
   if (loaded) {
     return (
       <div className="App">
-        <Header data={portfolioData.main} />
-        <About data={portfolioData.main} />
-        <Resume data={portfolioData.resume}/>
-        <Work />
-        <Footer />
+        <Header data={resumeData.main} />
+        <About data={resumeData.main} />
+        <Resume data={resumeData.resume}/>
+        <Project data={resumeData.portfolio}/>
+        <Footer data={resumeData.main}/>
       </div>
     );
   } else {

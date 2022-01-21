@@ -1,0 +1,23 @@
+#project {
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 72px;
+    overflow: hidden;
+}
+
+#project h4 {
+    text-transform: uppercase;
+    display: block !important;
+}
+
+#project .row {
+    width: 96%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#project .project-section {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+}

@@ -1,0 +1,118 @@
+{
+    "main": {
+      "name": "Chee",
+      "occupation": "Software Engineer",
+      "description": "Currently working as a Software Development Engineer where I done everything by searching solution from Google and slaping my keyboard",
+      "image": "profilepic.jpg",
+      "bio": "I am an enthusiastic and optimistic person who born in a small town in Malaysia. I have spend few years studied in Multimedia University and acquired a Bachelor Degree in IT and major in security technology. I am passionated with coding and security technology so i started my learning when i was 19. I currently working in SEMI Integration which developed different kind of automation system for various projects. I also love to play music and sport during my free time and i dreamed that i able to travel the world while taking my work with me",
+      "email": "jaydenchee97@gmail.com",
+      "phone": "(+65) 9757 8962",
+      "address": {
+        "street": "Lorong Kajang Raya 1",
+        "city": "Taman Kajang Raya",
+        "state": "Selangor",
+        "zip": "43000"
+      },
+      "website": "http://www.timbakerdev.com",
+      "resumedownload": "/CheeLimPengResume.pdf",
+      "social": [
+        {
+          "name": "facebook",
+          "url": "https://www.facebook.com/chee.l.peng/",
+          "className": "fa fa-facebook"
+        },
+        {
+          "name": "twitter",
+          "url": "https://twitter.com/CheeLimPeng",
+          "className": "fa fa-twitter"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/lim-peng-chee-418971188/",
+          "className": "fa fa-linkedin"
+        },
+        {
+          "name": "github",
+          "url": "https://github.com/cheechee97",
+          "className": "fa fa-github"
+        }
+      ]
+    },
+    "resume": {
+      "skillmessage": "I'm a enthusiastic person who like to spend time learning new tech ! Below are some of my skillset that i acquired during my work and my studies.  ",
+      "education": [
+        {
+          "school": "Multimedia University",
+          "degree": "Bachelor Degree in Information Technology (Hons.) (Security Technology)",
+          "graduated": "June 2016 - July 2019",
+          "link": "https://www.mmu.edu.my/",
+          "description": "After i finished my study on secondary school. I found out that i passionated about IT and I would like to see how IT can change the future. I choose to study IT and major in security technology as i am interested to know how the cybersecurity tech works in the world besides coding. I learned many programming languages such as python, java, c++, javascript, etc. Besides that, I also learned a lot of other type of knowledge such as encryption algorithm, data structure, cybersecurity, web development and etc. "
+        }
+      ],
+      "work": [
+        {
+          "company": "SEMI Integration",
+          "title": "Software Development Engineer ",
+          "years": "Jan 2021 - Present",
+          "link": "http://www.semi-integration.com/",
+          "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        },
+        {
+          "company": "CSE Global Pte Ltd",
+          "title": "IT Project Engineer",
+          "years": "March 2020 - Jan 2021",
+          "link": "http://www.cse-global.com/",
+          "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Java",
+          "image": "java.jpg"
+        },
+        {
+          "name": "SQL",
+          "image": "sql.png"
+        },
+        {
+          "name": "Cybersecurity",
+          "image": "cybersecurity.png"
+        },
+        {
+          "name": "Python",
+          "image": "python.png"
+        },
+        {
+          "name": "React Js",
+          "image": "react.svg"
+        },
+        {
+          "name": "Bootstrap",
+          "image": "bootstrap.png"
+        }
+      ]
+    },
+    "portfolio": {
+      "projectmessage": "Sometime i like to spend some time to study and learn new tech. Here are some of my side projects that i have done and you may review the repo in github.",
+      "projects": [
+        {
+          "title": "REACT RESUME",
+          "description": "A simple resume website developed using ReactJs",
+          "url": "https://github.com/cheechee97/react-resume"
+        }
+      ]
+    },
+    "testimonials": {
+      "testimonials": [
+        {
+          "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
+          "user": "Kareem Abdul Jabbar"
+        },
+        {
+          "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+          "user": "Steve Wozniak... impersonator"
+        }
+      ]
+    }
+  }
+  

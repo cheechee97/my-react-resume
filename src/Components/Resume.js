@@ -4,7 +4,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import '../css/Resume.css';
 
 const Resume = ( {data} ) => {
-    console.log(data);
 
     return (
         <section id="resume">
@@ -17,9 +16,6 @@ const Resume = ( {data} ) => {
             <div className="col-8">
                     {data.education.map(
                         (education) => {
-                            // console.log(social.name);
-                            // console.log(social.url);
-                            // console.log(social.className);
                             return (
                                 <div key={education.school}>
                                     <h3> {education.school}</h3>
@@ -35,13 +31,6 @@ const Resume = ( {data} ) => {
                             
                         }
                     )}
-                {/* <h3> Multimedia University</h3>
-                <p className='info'>
-                    Bachelor Degree in Information Technology (Hons.) (Security Technology) &nbsp;
-                    <span>•</span>
-                    <em className='date'> June 2016 - July 2019</em>
-                </p>
-                <p>some description asdasdasdasdasd</p> */}
             </div>
         </div>
         <div className="row work mt-2 pt-2">
@@ -70,7 +59,7 @@ const Resume = ( {data} ) => {
                     )}
             </div>
         </div>
-        <div className="row mt-2 pt-2">
+        <div className="row skillsection mt-2 pt-2">
             <div className="header-col d-flex justify-content-center col-4">
                 <div>
                     <h1><span>SKILL</span></h1>
